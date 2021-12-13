@@ -53,11 +53,13 @@ The model is trained on `20 epochs` using Adam as an optimizer with a `learning 
 
 ### Sample Generation
 
-Here are some generated samples from the model:
+Here are some generated samples from the model, you can listen to them here:
 
-<audio controls="controls">   <source type="audio/mp3" src="./media/audio1.mp3"></source>   <source type="audio/ogg" src="filename.ogg"></source>   <p>Your browser does not support the audio element.</p> </audio>
+<p align="center">
+ <a href="https://www.youtube.com/watch?v=_LIzDdZsoDc">  <img src="http://img.youtube.com/vi/_LIzDdZsoDc/0.jpg?raw=true" alt="Sublime's custom image"/> </a>
+</p>
 
-<img src="./media/audio1.jpg" align="center" height="300" width="500" >
+
 
 ## Play with the model
 
