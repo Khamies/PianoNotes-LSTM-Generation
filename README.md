@@ -1,4 +1,4 @@
-# Piano-LSTM-Generation
+# PianoNotes-LSTM-Generation
 A Pytorch Implementation of Piano' notes generation using LSTM sequence model.
 
 ![](/home/waleed/Desktop/papers/LSTM-Language-Generator/media/lstm_gen.png)
@@ -7,6 +7,7 @@ A Pytorch Implementation of Piano' notes generation using LSTM sequence model.
 
 - **[Introduction](#Introduction)**
 - **[Setup](#Setup)**
+- **[Nottingham' Dataset](#Nottingham'-Dataset)**
 - [**Run the code**](#Run-the-code)
 - **[Training](#Training)**
 - **[Sample Generation](#Sample-Generation)**
@@ -18,7 +19,7 @@ A Pytorch Implementation of Piano' notes generation using LSTM sequence model.
 
 This is a PyTorch Implementation for an LSTM-based Music model that generates piano' notes using Nottingham' Dataset. You can download the dataset from [here](http://www-ens.iro.umontreal.ca/~boulanni/icml2012).
 
-### About the Nottingham' Dataset
+### Nottingham' Dataset
 
 The [Nottingham Music Database](http://abc.sourceforge.net/NMD/)  contains over 1000 Folk Tunes stored in a special text format. The dataset has been converted to a piano-roll format to be easily processed and visualised, you can find the downloadable version [here](http://www-ens.iro.umontreal.ca/~boulanni/Nottingham.pickle).
 
@@ -26,8 +27,8 @@ The [Nottingham Music Database](http://abc.sourceforge.net/NMD/)  contains over 
 
 The code is using `pipenv` as a virtual environment and package manager. To run the code, all you need is to install the necessary dependencies. open the terminal and type:
 
-- `git clone https://github.com/Khamies/LSTM-Language-Generator.git` 
-- `cd LSTM-Language-Generator`
+- `git clone https://github.com/Khamies/PianoNotes-LSTM-Generation.git` 
+- `cd PianoNotes-LSTM-Generation`
 - `pipenv install`
 
 And you should be ready to go to play with code and build upon it!
@@ -35,10 +36,8 @@ And you should be ready to go to play with code and build upon it!
 ### Run the code
 
 - To train the model, run: `python main.py`
-
 - To train the model with specific arguments, run: `python main.py --batch_size=64`. The following command-line arguments are available:
   - Batch size: `--batch_size`
-  - bptt: `--bptt`
   - Learning rate: `--lr`
   - Embedding size: `--embed_size`
   - Hidden size: `--hidden_size`
@@ -46,20 +45,19 @@ And you should be ready to go to play with code and build upon it!
 
 ### Training
 
-The model is trained on `10 epochs` using Adam as an optimizer with a `learning rate = 0.001` and `batch size = 32`, you can find all the model settings in [settings.py](https://github.com/Khamies/LSTM-Language-Generator/blob/main/settings.py). Here is the loss curve for the training step:
+The model is trained on `20 epochs` using Adam as an optimizer with a `learning rate = 0.001` and `batch size = 32`, you can find all the model settings in [settings.py](https://github.com/Khamies/LSTM-Language-Generator/blob/main/settings.py). Here is the loss curve for the training step:
 
 - **Negative Likelihood Loss**
 
-  <img src="/home/waleed/Desktop/papers/LSTM-Language-Generator/media/nll_loss.jpg" align="center" height="300" width="500" >
+  <img src="./media/nll_loss.jpg" align="center" height="300" width="500" >
 
 ### Sample Generation
 
 Here are some generated samples from the model:
 
-```markdown
-he said <pad> is n't expected to be the first quarter of
-the company said will be used to repay the company's
-```
+<audio controls="controls">   <source type="audio/mp3" src="./media/audio1.mp3"></source>   <source type="audio/ogg" src="filename.ogg"></source>   <p>Your browser does not support the audio element.</p> </audio>
+
+<img src="./media/audio1.jpg" align="center" height="300" width="500" >
 
 ## Play with the model
 
