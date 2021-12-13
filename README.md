@@ -21,7 +21,13 @@ This is a PyTorch Implementation for an LSTM-based Music model that generates pi
 
 ### Nottingham' Dataset
 
-The [Nottingham Music Database](http://abc.sourceforge.net/NMD/)  contains over 1000 Folk Tunes stored in a special text format. The dataset has been converted to a piano-roll format to be easily processed and visualised, you can find the downloadable version [here](http://www-ens.iro.umontreal.ca/~boulanni/Nottingham.pickle).
+The [Nottingham Music Database](http://abc.sourceforge.net/NMD/)  contains over 1000 Folk Tunes stored in a special text format. The dataset has been converted to a piano-roll format to be easily processed and visualised, you can find the downloadable version [here](http://www-ens.iro.umontreal.ca/~boulanni/Nottingham.pickle). Here is a sample from the dataset:
+
+
+
+<p align="center">
+    <img src="./media/data.jpg" align="center" height="300" width="500" >
+</p>
 
 ### Setup
 
@@ -57,7 +63,7 @@ The model is trained on `20 epochs` using Adam as an optimizer with a `learning 
 
 ### Sample Generation
 
-Here are some generated samples from the model, you can listen to them here:
+Here is a generated sample from the model, you can listen to it here:
 
 <p align="center">
  <a href="https://www.youtube.com/watch?v=_LIzDdZsoDc">  <img src="http://img.youtube.com/vi/_LIzDdZsoDc/0.jpg?raw=true" alt="Sublime's custom image"/> </a>
