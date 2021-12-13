@@ -78,7 +78,7 @@ class LSTM_Music(torch.nn.Module):
     return (binary_logits, states)
 
 
-  def inference(self, n_samples, sos=None):
+  def inference(self, n_samples, sos=None, pitch_index=30):
 
     # generate random z 
     batch_size = 1
@@ -87,7 +87,7 @@ class LSTM_Music(torch.nn.Module):
 
     if sos is None:
       x = torch.zeros(1,1,self.vocab_size).to(self.device)
-      x[:,:,30] = 1
+      x[:,:,pitch_index] = 1
 
 
     hidden = self.init_hidden(batch_size)
