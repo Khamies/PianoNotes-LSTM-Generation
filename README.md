@@ -49,7 +49,11 @@ The model is trained on `20 epochs` using Adam as an optimizer with a `learning 
 
 - **Negative Likelihood Loss**
 
-  <img src="./media/nll_loss.jpg" align="center" height="300" width="500" >
+  <p align="center">
+      <img src="./media/nll_loss.jpg" align="center" height="300" width="500" >
+  </p>
+
+  
 
 ### Sample Generation
 
