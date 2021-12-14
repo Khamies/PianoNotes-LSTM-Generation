@@ -1,7 +1,5 @@
 # PianoNotes-LSTM-Generation
-A Pytorch Implementation of Piano' notes generation model using LSTM sequence model.
-
-![](./media/msuic_diagram.png)
+A Pytorch Implementation of LSTM-based musical model to generate piano'notes.![](./media/msuic_diagram.png)
 
 ### Table of Contents
 
