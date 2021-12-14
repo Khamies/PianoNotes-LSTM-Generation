@@ -1,5 +1,5 @@
 # PianoNotes-LSTM-Generation
-A Pytorch Implementation of Piano' notes generation using LSTM sequence model.
+A Pytorch Implementation of Piano' notes generation model using LSTM sequence model.
 
 ![](/home/waleed/Desktop/papers/LSTM-Language-Generator/media/lstm_gen.png)
 
@@ -21,13 +21,12 @@ This is a PyTorch Implementation for an LSTM-based Music model that generates pi
 
 ### Nottingham' Dataset
 
-The [Nottingham Music Database](http://abc.sourceforge.net/NMD/)  contains over 1000 Folk Tunes stored in a special text format. The dataset has been converted to a piano-roll format to be easily processed and visualised, you can find the downloadable version [here](http://www-ens.iro.umontreal.ca/~boulanni/Nottingham.pickle). Here is a sample from the dataset:
-
-
+The [Nottingham Music Database](http://abc.sourceforge.net/NMD/)  contains over 1000 Folk Tunes stored in a special text format. The dataset has been converted to a piano-roll format to be easily processed and visualised. Here is a sample from the dataset that you can listen to:
 
 <p align="center">
-    <img src="./media/data.jpg" align="center" height="300" width="500" >
+ <a href="https://www.youtube.com/watch?v=fPu3hMfQC-A">  <img src="http://img.youtube.com/vi/fPu3hMfQC-A/0.jpg?raw=true" alt="Sublime's custom image"/> </a>
 </p>
+
 
 ### Setup
 
@@ -73,18 +72,18 @@ Here is a generated sample from the model, you can listen to it here:
 
 ## Play with the model
 
-To play with the model, a jupyter notebook has been provided, you can find it [here](https://github.com/Khamies/LSTM-Language-Generator/blob/main/Play_with_model.ipynb)
+To play with the model, a jupyter notebook has been provided, you can find it [here](https://github.com/Khamies/PianoNotes-LSTM-Generation/blob/main/Play_with_model.ipynb)
 
 ### Citation
 
 > ```
-> @misc{Khamies2021LSTM-Language-Generator,
+> @misc{Khamies2021PianoNotes-LSTM-Generation,
 > author = {Khamies, Waleed},
-> title = {A PyTorch Implementation for an LSTM-based language model},
+> title = {A PyTorch Implementation for an LSTM-based Piano model},
 > year = {2021},
 > publisher = {GitHub},
 > journal = {GitHub repository},
-> howpublished = {\url{https://github.com/Khamies/LSTM-Language-Generator}},
+> howpublished = {\url{https://github.com/Khamies/PianoNotes-LSTM-Generation}},
 > }
 > ```
 
