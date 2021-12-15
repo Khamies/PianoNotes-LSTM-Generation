@@ -19,7 +19,7 @@ model_setting = {
 
 training_setting = {
 
-"epochs": 1,
+"epochs": 20,
 "batch_size": 32,
 "lr" : 0.001,
 "clip": 0.25,
